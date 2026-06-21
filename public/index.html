@@ -8,16 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Project Idea Rescue</h1>
-        <p class="subtitle">
-            Transform rough ideas into complete project plans using AI.
-        </p>
+        <div class="hero">
+            <h1>Project Idea Rescue</h1>
+            <p class="subtitle">
+                Transform rough ideas into complete project plans using AI.
+            </p>
+        </div>
         <div class="input-section">
             <label for="idea-input">
                 Enter your idea or problem statement
             </label>
 
-            <textarea id="idea-input" placeholder="Example: I want to reduce food waste in colleges"></textarea>
+            <textarea id="idea-input" placeholder="Example: Food Waste Management"></textarea>
             <label for="audience">
                 Target Audience
             </label>
@@ -29,30 +31,49 @@
                 <option value="Education">Education</option>
                 <option value="General Public">General Public</option>
             </select>
-            <button id="generate-btn">Generate Project</button>
+
+            <div class="button-container">
+                <button id="generate-btn">Generate Project</button>
+            </div>
         </div>
         <div id="output-section">
-            <h2>Project Title</h2>
-            <div id="project-title"></div>
 
-            <h2>Problem Statement</h2>
-            <div id="problem-statement"></div>
+    <div class="card">
+        <h2>Project Title</h2>
+        <div id="project-title"></div>
+    </div>
 
-            <h2>Key Features</h2>
-            <div id="features"></div>
+    <div class="card">
+        <h2>Problem Statement</h2>
+        <div id="problem-statement"></div>
+    </div>
 
-            <h2>Suggested APIs</h2>
-            <div id="apis"></div>
+    <div class="card">
+        <h2>Key Features</h2>
+        <ul id="features"></ul>
+    </div>
 
-            <h2>Tech Stack</h2>
-            <div id="tech-stack"></div>
+    <div class="card">
+        <h2>Suggested APIs</h2>
+        <ul id="apis"></ul>
+    </div>
 
-            <h2>Development Roadmap</h2>
-            <div id="roadmap"></div>
+    <div class="card">
+        <h2>Tech Stack</h2>
+        <ul id="tech-stack"></ul>
+    </div>
 
-            <h2>Resume Description</h2>
-            <div id="resume-description"></div>
-        </div>
+    <div class="card">
+        <h2>Development Roadmap</h2>
+        <ul id="roadmap"></ul>
+    </div>
+
+    <div class="card">
+        <h2>Resume Description</h2>
+        <div id="resume-description"></div>
+    </div>
+
+</div>
     </div>
 
     <script src="script.js"></script>
