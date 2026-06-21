@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Idea Rescue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Idea Rescue</h1>
+        <p class="subtitle">
+            Transform rough ideas into complete project plans using AI.
+        </p>
+        <div class="input-section">
+            <label for="idea-input">
+                Enter your idea or problem statement
+            </label>
+
+            <textarea id="idea-input" placeholder="Example: I want to reduce food waste in colleges"></textarea>
+            <label for="audience">
+                Target Audience
+            </label>
+            <select id="audience">
+                <option value="Students">Students</option>
+                <option value="Farmers">Farmers</option>
+                <option value="Businesses">Businesses</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Education">Education</option>
+                <option value="General Public">General Public</option>
+            </select>
+            <button id="generate-btn">Generate Project</button>
+        </div>
+        <div id="output-section">
+            <h2>Project Title</h2>
+            <div id="project-title"></div>
+
+            <h2>Problem Statement</h2>
+            <div id="problem-statement"></div>
+
+            <h2>Key Features</h2>
+            <div id="features"></div>
+
+            <h2>Suggested APIs</h2>
+            <div id="apis"></div>
+
+            <h2>Tech Stack</h2>
+            <div id="tech-stack"></div>
+
+            <h2>Development Roadmap</h2>
+            <div id="roadmap"></div>
+
+            <h2>Resume Description</h2>
+            <div id="resume-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
